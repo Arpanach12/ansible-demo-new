@@ -1,0 +1,1000 @@
+  331  ls
+  332  cd ..
+  333  ls
+  334  cd opt/tomcat/
+  335  ls
+  336  cd conf
+  337  ls
+  338  vim tomcat-users.xml
+  339  vi context.xml 
+  340  cd ..
+  341  cd webapps/manager/META-INF/
+  342  ls
+  343  vi context.xml 
+  344  cd ..
+  345  ./bin/catalina.sh stop
+  346  ./bin/catalina.sh start
+  347  cd ..
+  348  ls
+  349  cd tomcat/
+  350  ls
+  351  cd webapps/
+  352  ls
+  353  cd manager
+  354  ls
+  355  cd META-INF/
+  356  ls
+  357  vi context.xml \
+  358  vi context.xml 
+  359  cd ../../../
+  360  cd ..
+  361  rm -r tomcat
+  362  ls
+  363  cd ..
+  364  ls
+  365  cd root/
+  366  ls
+  367  cp -rf apache-tomcat-8.5.56 /opt/tomcat
+  368  cd ..
+  369  cd opt
+  370  ls
+  371  rm -r tomcat
+  372  ls
+  373  cd ..
+  374  cd root/
+  375  cd ..
+  376  sudo su -
+  377  ls
+  378  cp -rf apache-tomcat-8.5.56 /opt/tomcat
+  379  ls
+  380  cd ..
+  381  ls
+  382  cd opt/tomcat/
+  383  ls
+  384  vi conf/tomcat-users.xml
+  385  vi webapps/
+  386  ls
+  387  cd webapps/
+  388  ls
+  389  cd manager/
+  390  ls
+  391  cd META-INF/
+  392  vi context.xml 
+  393  cd ../../../
+  394  ls
+  395  cd conf
+  396  ls
+  397  vi tomcat-users.xml
+  398  cd ..
+  399  chmod +x bin/catalina.sh  
+  400  ./bin/catalina.sh start
+  401  ./bin/catalina.sh stop
+  402  ./bin/catalina.sh start
+  403  ls
+  404  cd ../../
+  405  ls
+  406  cd opt/tomcat/
+  407  ls
+  408  cd webapps/
+  409  ls
+  410  cd ..
+  411  rm -rf webapps/petclinic*
+  412  cd webapps/
+  413  ls
+  414  nohup java -jar /root/jenkins.war --httpPort=9090 > output.txt &
+  415  cd ..
+  416  ./bin/catalina.sh start
+  417  ls
+  418  cd devops-301/
+  419  ls
+  420  docker -v
+  421  mkdir docker-01
+  422  ls
+  423  cd docker-01/
+  424  ls
+  425  history
+  426  clear
+  427  cd ..
+  428  history
+  429  clear
+  430  ls
+  431  cd docker-01/
+  432  docker run busybox echo "hello world"
+  433  docker ps 
+  434  docker ps -l
+  435  docker ps -a
+  436  docker run -it busybox
+  437  sudo docker ps -a
+  438  sudo docker start ab8fdeb4eb8f 
+  439  sudo docker ps -a
+  440  sudo docker stop ab8fdeb4eb8f 
+  441  sudo docker ps -a
+  442  docker attach ab8fdeb4eb8f 
+  443  sudo docker start ab8fdeb4eb8f 
+  444  docker attach ab8fdeb4eb8f 
+  445  sudo docker ps -a
+  446  clear
+  447  ls
+  448  mkdir dockerfile-1
+  449  cd dockerfile-1/
+  450  mkdir apache
+  451  cd apache/
+  452  ls
+  453  vim Dockerfile
+  454  ls
+  455  cd devops-301/
+  456  ls
+  457  cd docker-01/
+  458  ls
+  459  cd dockerfile-1/
+  460  ls
+  461  cd apache/
+  462  ls
+  463  clear
+  464  vim Dockerfile
+  465  ls
+  466  clear
+  467  docker build -t myapache .
+  468  ls
+  469  cd devops-301/docker-01/dockerfile-1/
+  470  ls
+  471  cd apache/
+  472  ls
+  473  docker build -t myapache .
+  474  echo "welcome to information page of docker" >> info.html
+  475  docker build -t myapache .
+  476  docker ps -a
+  477  docker images
+  478  git status
+  479  cd ..
+  480  ls
+  481  git status
+  482  cd ..
+  483  git status
+  484  cd ..
+  485  git status
+  486  ls
+  487  git add .;git commit -m "docker file to download apache";git push
+  488  ls
+  489  cd devops-301/
+  490  git branch
+  491  mkdir 06-terraform
+  492  cd 06-terraform/
+  493  mkdir terraform-setup
+  494  cd terraform-setup/
+  495  vim terraform-bootstrap.sh
+  496  chmod +x terraform-bootstrap.sh
+  497  ls
+  498  clear
+  499  vim root/.bashrc
+  500  ls
+  501  cd devops-301/
+  502  ls
+  503  cd docker-01/
+  504  ls
+  505  cd ..
+  506  cd 06-terraform/
+  507  cd ..
+  508  wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip
+  509  ls
+  510  unzip terraform_0.12.24_linux_amd64.zip 
+  511  ls
+  512  terraform --version
+  513  apt-get install terraform
+  514  rm -rf terraform
+  515  ls
+  516  clear
+  517  apt-get install unzip terraform_0.12.24_linux_amd64.zip -y
+  518  unzip terraform_0.12.24_linux_amd64.zip 
+  519  ls
+  520  apt-get install terraform
+  521  terraform --version
+  522  mv terraform /usr/bin/terraform
+  523  ls
+  524  cd ..
+  525  ls
+  526  cd ..
+  527  ls
+  528  cd usr/bin
+  529  ls
+  530  cd terraform 
+  531  clear
+  532  chmod +x usr/bin/terraform
+  533  ls
+  534  cd devops-301/
+  535  ls
+  536  unzip terraform_0.12.24_linux_amd64.zip 
+  537  ls
+  538  terraform --version
+  539  chmod +x terraform-bootstrap.sh
+  540  mv terraform /usr/bin/terraform
+  541  chmod +x /usr/bin/terraformchmod +x /usr/bin/terraform
+  542  chmod +x /usr/bin/terraform
+  543  ls
+  544  cd ../../
+  545  ls
+  546  cd ..
+  547  ls
+  548  terraform --version
+  549  ls
+  550  cd ../../
+  551  ls
+  552  cd root/
+  553  ls
+  554  cd ..
+  555  cd bin/
+  556  ls
+  557  cd ..
+  558  ls
+  559  cd /root/.bashrc
+  560  cd root/
+  561  ls
+  562  cd bin/
+  563  cd bin
+  564  ls
+  565  cd ..
+  566  ls
+  567  cd bin/
+  568  ls
+  569  cd bash 
+  570  cat bash
+  571  GUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLEGUACAMOLE
+  572  ls
+  573  cd ..
+  574  ls
+  575  cd ..
+  576  ls
+  577  cd root/
+  578  ls
+  579  cd ..
+  580  ls
+  581  cd ..
+  582  ls
+  583  cd root/
+  584  ls
+  585  cd demo/
+  586  cd devops301-mindtree-09-Jan-2021/
+  587  ls
+  588  cd 00-Setup/
+  589  ls
+  590  cd ..
+  591  git status
+  592  cd ..
+  593  ls
+  594  cd ..
+  595  ls
+  596  cd ..
+  597  ls
+  598  cd home/
+  599  ls
+  600  cd devops/
+  601  ls
+  602  cd devops-301/
+  603  ls
+  604  cd 06-terraform/
+  605  ls
+  606  cd terraform-setup/
+  607  ls
+  608  l
+  609  cd devops-301/
+  610  ls
+  611  cd 06-terraform/
+  612  ls
+  613  cd terraform-setup/
+  614  ls
+  615  export AWS_ACCESS_KEY_ID="AKIA4PNQ53AJBM2DVFFO"
+  616  AWS_SECRET_ACCESS_KEY="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"
+  617  cd ..
+  618  mkdir 01-First-Deployment
+  619  cd 01-First-Deployment/
+  620  clear
+  621  vim first_deployment.tf
+  622  clear
+  623  terraform init 
+  624  clear
+  625  vim first_deployment.tf 
+  626  terraform init 
+  627  vim first_deployment.tf 
+  628  terraform init 
+  629  terraform plan
+  630  AWS_SECRET_ACCESS_KEY="t0hHt9ciu6zrnd/crDy08GqqM2R+nTSOmExyacUc"
+  631  export AWS_ACCESS_KEY_ID="AKIA4PNQ53AJBM2DVFFO"
+  632  export AWS_SECRET_ACCESS_KEY="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"
+  633  terraform plan
+  634  terraform apply
+  635  export AWS_ACCESS_KEY_ID="AKIA4PNQ53AJBM2DVFFO"
+  636  export AWS_SECRET_ACCESS_KEY="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"
+  637  terraform init 
+  638  terraform plan
+  639  terraform apply
+  640  ls
+  641  cd devops-301/
+  642  ls
+  643  cd docker-01/
+  644  ls
+  645  cd dockerfile-1/
+  646  ls
+  647  cd apache/
+  648  ls
+  649  cd ..
+  650  mkdir tomcat
+  651  cd tomcat/
+  652  vim Dockerfile
+  653  clear
+  654  cd ../../../
+  655  cd ../
+  656  ls
+  657  cd ../..
+  658  ls
+  659  cd opt/
+  660  ls
+  661  cd tomcat/
+  662  ls
+  663  cd webapps/
+  664  ls
+  665  cd ../../../
+  666  cd root/
+  667  ls
+  668  cd demo/
+  669  ls
+  670  cd ..
+  671  cd home/
+  672  cd devops/
+  673  ls
+  674  cd devops-301/
+  675  ls
+  676  cd docker-01/
+  677  ls
+  678  cd dockerfile-1/
+  679  ls
+  680  cd tomcat/
+  681  ls
+  682  cp -rf /opt/tomcat/webapps/petclinic.war
+  683  ls
+  684  cd devops-301/
+  685  cd docker-01/
+  686  cd dockerfile-1/
+  687  cd tomcat/
+  688  ls
+  689  cp -rf opt/tomcat/webapps/petclinic.war
+  690  cp -rf petclinic.war opt/tomcat/webapps
+  691  cp -rf  opt/tomcat/webapps/petclinic.war .
+  692  cp -rf /opt/tomcat/webapps/petclinic.war .
+  693  ls
+  694  docker build -t petclinic-webapp .
+  695  docker images
+  696  ls
+  697  cd devops-301/
+  698  ls
+  699  cd docker-01/
+  700  ls
+  701  cd dockerfile-1/
+  702  ls
+  703  docker ps -a
+  704  docker images
+  705  docker run -d --name petclinic-1 -P petclinic-webapp
+  706  docker ps -a
+  707  ls
+  708  docker ps -a
+  709  ls
+  710  cd tomcat/
+  711  ls
+  712  > petclinic.war 
+  713  ls
+  714  cd ../..
+  715  mkdir docker-compose-2
+  716  cd docker-compose-2/
+  717  mkdir 01-Nginx-App
+  718  cd 01-Nginx-App/
+  719  vim docker-compose.yaml
+  720  docker-compose up -d
+  721  apt install docker-compose
+  722  docker-compose up -d
+  723  docker images
+  724  docker ps -a
+  725  docker-compose stop
+  726  docker ps -a
+  727  docker images
+  728  docker-compose rm
+  729  docker images
+  730  docker ps -a
+  731  ls
+  732  cp -rf docker-compose.yaml 02-Mult-App
+  733  ls
+  734  rm 02-Mult-App 
+  735  ls
+  736  cd ..
+  737  cp -rf 01-Nginx-App 02-Mult-App
+  738  ls
+  739  cd 02-Mult-App/
+  740  ls
+  741  vim docker-compose.yaml 
+  742  docker-compose up -d
+  743  docker images
+  744  docker-compose up -d
+  745  vim docker-compose.yaml 
+  746  docker images
+  747  docker-compose up -d
+  748  vim docker-compose.yaml 
+  749  docker-compose up -d
+  750  docker ps -a
+  751  cd ..
+  752  mkdir petclinic-deploy-03
+  753  cd petclinic-deploy-03/
+  754  cp -rf /opt/tomcat/webapps/petclinic.war .
+  755  ls
+  756  cd devops-301/
+  757  ls
+  758  cd docker-01/
+  759  ls
+  760  cd docker-compose-2/
+  761  ls
+  762  cd petclinic-deploy-03/
+  763  ls
+  764  vim Dockerfile
+  765  ls
+  766  vim docker-compose.yaml
+  767  ls
+  768  docker-compose up -d
+  769  ls
+  770  cd devops-301/
+  771  ls
+  772  cd docker-01/
+  773  ls
+  774  cd dockerfile-1/
+  775  ls
+  776  cd tomcat/
+  777  ls
+  778  git status
+  779  cd ..
+  780  ls
+  781  git status
+  782  git pull
+  783  git add .; git commit -m 
+  784  git add .; git commit -m "docker-files added"; git push
+  785  ;s
+  786  ls
+  787  cd docker-01/
+  788  ls
+  789  git status
+  790  git add .; git commit -m "docker file"; git push
+  791  ls
+  792  cd docker-compose-2/
+  793  ls
+  794  git add .; git commit -m "docker file"; git push
+  795  ls
+  796  cd 01-Nginx-App/
+  797  git add .; git commit -m "docker file"; git push
+  798  ls
+  799  clear
+  800  cd ..
+  801  ls
+  802  mkdir sonar-04
+  803  cd sonar-04/
+  804  vim docker-compose.yaml
+  805  docker-compose up -d
+  806  docker ps -a
+  807  docker rm -f $(docker ps -qa)
+  808  docker-compose up -d
+  809  docker ps -a
+  810  docker-compose up -d
+  811  docker ps -a
+  812  docker rm -f $(docker ps -qa)
+  813  docker-compose up -d
+  814  docker ps -a
+  815  free -m
+  816  docker ps -a
+  817  docker logs 9f252df9b4e9
+  818  docker rm -f $(docker ps -qa)
+  819  sysctl -w vm.max_map_count=262144
+  820  docker-compose up -d
+  821  docker ps -a
+  822  history
+  823  nohup java -jar /root/jenkins.war --httpPort=9090 > output.txt &
+  824  ls
+  825  cd devops-301/
+  826  ls
+  827  cd docker-01/
+  828  ls
+  829  cd docker-compose-2/
+  830  ls
+  831  mkdir 05-jfrog-ex
+  832  cd 05-jfrog-ex/
+  833  ls
+  834  vim docker-compose.yaml
+  835  ls
+  836  docker-compose up -d
+  837  vim docker-compose.yaml
+  838  docker-compose up -d
+  839  chmod 777 -R /data/artifactory
+  840  cd ..exit
+  841  cd ..
+  842  ls
+  843  cd 05
+  844  cd 05-jfrog-ex/
+  845  ls
+  846  chmod 777 -R /data/artifactory
+  847  cd ../../../../
+  848  chmod 777 -R /data/artifactory
+  849  ls
+  850  cd ..
+  851  ls
+  852  cd ..
+  853  ls
+  854  cd root/
+  855  ls
+  856  cd ..
+  857  cd home/devops/
+  858  ls
+  859  cd devops-301/
+  860  ls
+  861  cd docker-01/
+  862  ls
+  863  cd docker-compose-2/
+  864  ls
+  865  cd 05-jfrog-ex/
+  866  ls
+  867  docker-compose up -d
+  868  chmod 777 -R /data/artifactory
+  869  docker ps
+  870  docker stop 7369a6d94b11 
+  871  docker rm 7369a6d94b11 
+  872  docker-compose up -d
+  873  docker ps
+  874  chmod 777 -R /data/artifactory
+  875  docker logs 2d0903a4d81a 
+  876  docker ps -a
+  877  docker ps
+  878  history
+  879  nohup java -jar /root/jenkins.war --httpPort=9090 > output.txt &
+  880  history
+  881  ls
+  882  clear
+  883  cd devops-301/
+  884  ls
+  885  cd docker-01/
+  886  ls
+  887  cd docker-compose-2/
+  888  ls
+  889  history
+  890  ./bin/catalina.sh start
+  891  cd ../../../
+  892  ./bin/catalina.sh start
+  893  ../../
+  894  cd ../../
+  895  ls
+  896  ./bin/catalina.sh start
+  897  cd bin
+  898  ls
+  899  ./bin/catalina.sh start
+  900  cd ..
+  901  ls
+  902  cd root/
+  903  ls
+  904  ./bin/catalina.sh start
+  905  cd ..
+  906  cd opt/
+  907  ls
+  908  cd tomcat/
+  909  ls
+  910  ./bin/catalina.sh start
+  911  cd ../../
+  912  cd home/
+  913  cd devops/
+  914  ls
+  915  cd devops-301/
+  916  cd docker-01/
+  917  ls
+  918  cd docker-compose-2/
+  919  ls
+  920  cd sonar-04/
+  921  ls
+  922  docker-compose up -d
+  923  docker-compose ps
+  924  docker-compose ps -a
+  925  docker-compose ps
+  926  docker-compose up -d
+  927  docker-compose ps
+  928  docker-compose ps -a
+  929  docker ps -a
+  930  docker rm bed0b407cfc7 
+  931  docker stop 47b4c92b587c 
+  932  docker rm 47b4c92b587c 
+  933  docker ps -a
+  934  docker-compose up -d
+  935  docker ps -a
+  936  docker logs 1a1490159080 
+  937  docker ps -a
+  938  docker rm 1a1490159080 
+  939  docker stop bc99f430cf68 
+  940  docker rm bc99f430cf68 
+  941  docker ps -a
+  942  clear
+  943  history
+  944  docker-compose up -d
+  945  clear
+  946  history
+  947  ls
+  948  cd devops-301/
+  949  ls
+  950  mkdir 03-ansible
+  951  rm 03-ansible/
+  952  cd 03-ansible/
+  953  ls
+  954  mkdir 01-inventory
+  955  cd 01-inventory/
+  956  ls
+  957  vim inventory
+  958  ls
+  959  clear
+  960  apt-get install ansible -y
+  961  ansible --version
+  962  ansible all -i inventory -m ping
+  963  ls
+  964  cd devops-301/
+  965  ls
+  966  cd 03-ansible/
+  967  ls
+  968  cd 01-inventory/
+  969  ls
+  970  cd devops-301/
+  971  ls
+  972  cd 03-ansible/
+  973  ls
+  974  cd 01-inventory/
+  975  ls
+  976  vim inventory 
+  977  clear
+  978  ls
+  979  ansible -m ping -i inventory all
+  980  vi etc/ssh/sshd_config
+  981  ls
+  982  cd devops-301/
+  983  ls
+  984  cd 03-ansible/
+  985  ls
+  986  cd 01-inventory/
+  987  ls
+  988  cd ..
+  989  ls
+  990  cd ../../../
+  991  cd ..
+  992  ls
+  993  cd root
+  994  ls
+  995  cd ..
+  996  cd home/devops/
+  997  ls
+  998  cd ..
+  999  ls
+ 1000  cd ..
+ 1001  cd root/
+ 1002  ls
+ 1003  cd demo/
+ 1004  ls
+ 1005  cd devops301-mindtree-09-Jan-2021/
+ 1006  ls
+ 1007  git status
+ 1008  git pull
+ 1009  ls
+ 1010  clear
+ 1011  history
+ 1012  cd ../..
+ 1013  cd root/
+ 1014  ls
+ 1015  cd demo/devops301-mindtree-09-Jan-2021/
+ 1016  ls
+ 1017  clear
+ 1018  cd 04-Ansible/
+ 1019  ls
+ 1020  cd 01-Inventory/
+ 1021  ls
+ 1022  vi inventory 
+ 1023  clear
+ 1024  ls
+ 1025  history
+ 1026  172.31.44.173 | FAILED! => {
+ 1027  apt-get install sshpass
+ 1028  clear
+ 1029  history
+ 1030  clear
+ 1031  cat /root/.ssh/
+ 1032  ls
+ 1033  ssh 172.31.39.11
+ 1034  ls
+ 1035  cd ../../
+ 1036  s
+ 1037  ls
+ 1038  cd root/
+ 1039  ls
+ 1040  cd demo/
+ 1041  ls
+ 1042  cd devops301-mindtree-09-Jan-2021/
+ 1043  ls
+ 1044  clear
+ 1045  ls
+ 1046  cd 04-Ansible/
+ 1047  cd ../../
+ 1048  cd root/
+ 1049  clear
+ 1050  ls
+ 1051  cd ../../
+ 1052  cd root/demo/devops301-mindtree-09-Jan-2021/
+ 1053  ls
+ 1054  cd 04-Ansible/
+ 1055  ls
+ 1056  clear
+ 1057  ls
+ 1058  cd 01-Inventory/
+ 1059  ls
+ 1060  cat /root/.ssh
+ 1061  vi inventory 
+ 1062  ls
+ 1063  cd devops-301/
+ 1064  ls
+ 1065  cd ../../../
+ 1066  cd root/
+ 1067  ls
+ 1068  cd demo/devops301-mindtree-09-Jan-2021/
+ 1069  ls
+ 1070  cd 04-Ansible/
+ 1071  ls
+ 1072  clear
+ 1073  ls
+ 1074  cd 01-Inventory/
+ 1075  ls
+ 1076  vi inventory 
+ 1077  clear
+ 1078  ansible --list host all
+ 1079  ansible --list hosts all
+ 1080  ansible --list-hosts all
+ 1081  ansible --list-host all
+ 1082  vi inventory 
+ 1083  clear
+ 1084  ansible --list-host all
+ 1085  vi inventory 
+ 1086  clear
+ 1087  vi inventory 
+ 1088  ansible --list-host web
+ 1089  ansible --list-host db
+ 1090  vi inventory 
+ 1091  ansible --list-host all
+ 1092  clear
+ 1093  vi /etc/ansible/hosts
+ 1094  clear
+ 1095  vi /etc/ansible/ansible.cfg
+ 1096  clear
+ 1097  adduser ansible
+ 1098  clear
+ 1099  visudo
+ 1100  LS
+ 1101  clear
+ 1102  ls
+ 1103  su -ansible
+ 1104  su - ansible
+ 1105  sudo - ansible
+ 1106  cd ../../
+ 1107  sudo - ansible
+ 1108  su - ansible
+ 1109  cd ../..
+ 1110  ls
+ 1111  vi /etc/ssh/sshd_config
+ 1112  cd ../../
+ 1113  vi etc/ssh/sshd_config
+ 1114  service sshd restart
+ 1115  su - ansible
+ 1116  vi /root/ansibledemo.pem
+ 1117  chmod 700 -r /root/ansibledemo.pem
+ 1118  chmod 700 -R /root/ansibledemo.pem
+ 1119  ssh -i /root/ansibledemo.pem 
+ 1120  ssh -i /root/ansibledemo.pem ubuntu@18.219.217.7
+ 1121  su - ansible
+ 1122  ansible all -i inventory -m ping
+ 1123  ls
+ 1124  cd etc/
+ 1125  ls
+ 1126  cd ..
+ 1127  cat etc/ansible/hosts 
+ 1128  clear
+ 1129  ls
+ 1130  cd devops-301/
+ 1131  ls
+ 1132  cd ../../../../
+ 1133  ls
+ 1134  cd root/
+ 1135  ls
+ 1136  cd demo/
+ 1137  ls
+ 1138  cd devops301-mindtree-09-Jan-2021/
+ 1139  ls
+ 1140  cd 04-Ansible/
+ 1141  ls
+ 1142  cd 01-Inventory/
+ 1143  ls
+ 1144  vi inventory 
+ 1145  ansible all -i inventory -m ping
+ 1146  ssh 18.219.217.7
+ 1147  ssh 172.31.16.221
+ 1148  cd ../../../../../
+ 1149  ssh 18.219.217.7
+ 1150  su - ansible
+ 1151  ls
+ 1152  cd root/
+ 1153  ls
+ 1154  cd demo/devops301-mindtree-09-Jan-2021/
+ 1155  ls
+ 1156  cd 04-Ansible/
+ 1157  ls
+ 1158  cd 01-Inventory/
+ 1159  ls
+ 1160  clear
+ 1161  history
+ 1162  ssh -i /root/ansibledemo.pem ubuntu@18.219.217.7
+ 1163  cd ../../
+ 1164  ls
+ 1165  cd root/
+ 1166  ls
+ 1167  cd demo/
+ 1168  ls
+ 1169  cd devops301-mindtree-09-Jan-2021/
+ 1170  ls
+ 1171  cd 04-Ansible/01-Inventory/
+ 1172  ls
+ 1173  clear
+ 1174  vi inventory 
+ 1175  ansible all -i inventory -m ping
+ 1176  git status
+ 1177  git add .;git commit -m "ssh connection";git push
+ 1178  cd ../../../../
+ 1179  ls
+ 1180  cd ..
+ 1181  ls
+ 1182  cd home/
+ 1183  ls
+ 1184  cd devops/
+ 1185  ls
+ 1186  cd devops-301/
+ 1187  ls
+ 1188  cd 03-ansible/
+ 1189  ls
+ 1190  cd 01
+ 1191  cd 01-inventory/
+ 1192  ls
+ 1193  vi inventory 
+ 1194  cd ../../../../../
+ 1195  ls
+ 1196  cd root/
+ 1197  ls
+ 1198  cd demo/
+ 1199  ls
+ 1200  cd devops301-mindtree-09-Jan-2021/
+ 1201  ls
+ 1202  cd 04-Ansible/
+ 1203  ls
+ 1204  cd 01-Inventory/
+ 1205  ls
+ 1206  vi inventory 
+ 1207  ls
+ 1208  cd devops-301/
+ 1209  ls
+ 1210  cd ..
+ 1211  cd ../../
+ 1212  ls
+ 1213  cd root/
+ 1214  ls
+ 1215  cd demo/
+ 1216  ls
+ 1217  cd devops301-mindtree-09-Jan-2021/
+ 1218  ls
+ 1219  cd 04-Ansible/
+ 1220  ls
+ 1221  cd 01-Inventory/
+ 1222  ls
+ 1223  vi inventory 
+ 1224  cd ../../
+ 1225  ls
+ 1226  cd ..
+ 1227  ls
+ 1228  cd root/
+ 1229  cd ..
+ 1230  ls
+ 1231  cd home/
+ 1232  cd devops/
+ 1233  ls
+ 1234  cd devops-301/
+ 1235  ls
+ 1236  cd 03-ansible/
+ 1237  ls
+ 1238  cd 01-inventory/
+ 1239  ls
+ 1240  vi inventory 
+ 1241  ansible all -i inventory -m ping
+ 1242  vi inventory 
+ 1243  ansible all -i inventory -m ping
+ 1244  git status
+ 1245  cd ..
+ 1246  git status
+ 1247  cd ..
+ 1248  git status
+ 1249  git add .; git commit -m "ansible inventory added"; git push
+ 1250  ls
+ 1251  rm terraform_0.12.24_linux_amd64.zip 
+ 1252  git add .; git commit -m "ansible inventory added"; git push
+ 1253  git status
+ 1254  git push;
+ 1255  ls
+ 1256  cd 06-terraform/
+ 1257  ls
+ 1258  git status
+ 1259  cd ..
+ 1260  git push 06-terraform
+ 1261  rm 06-terraform/
+ 1262  rmdir 06-terraform/
+ 1263  cd 06-terraform/
+ 1264  ls
+ 1265  rmdir terraform-setup/
+ 1266  cd terraform-setup/
+ 1267  ls
+ 1268  rm terraform-bootstrap.sh 
+ 1269  cd ..
+ 1270  rmdir terraform-setup/
+ 1271  cd 01-First-Deployment/
+ 1272  ls
+ 1273  rm first_deployment.tf 
+ 1274  rm terraform.tfstate
+ 1275  rm terraform.tfstate.backup 
+ 1276  cd ..
+ 1277  rmdir 01-First-Deployment/
+ 1278  cd 01-First-Deployment/
+ 1279  ls
+ 1280  cd ..
+ 1281  ls
+ 1282  rmdir 01-First-Deployment/
+ 1283  rmdir 01-First-Deployment
+ 1284  cd ..
+ 1285  git status
+ 1286  git add .; git commit -m "ansible changes"; git push
+ 1287  ls
+ 1288  cd 03-ansible/
+ 1289  ls
+ 1290  cd 01-inventory/
+ 1291  ls
+ 1292  ansible all -i inventory -m ping
+ 1293  git status
+ 1294  git push
+ 1295  cd ..
+ 1296  ls
+ 1297  rmdir 06-terraform/
+ 1298  cd 06-terraform/
+ 1299  ls
+ 1300  cd 01-First-Deployment/
+ 1301  ls
+ 1302  cd ..
+ 1303  rmdir 01-First-Deployment/
+ 1304  rmdir -r 01-First-Deployment
+ 1305  rm -r 01-First-Deployment/
+ 1306  ls
+ 1307  cd ..
+ 1308  rm -r 06-terraform/
+ 1309  ls
+ 1310  git status
+ 1311  git add .; git commit -m "deleted terraform";git push
+ 1312  cd ..
+ 1313  ls
+ 1314  git clone https://github.com/Arpanach12/ansible-demo-new.git
+ 1315  ls
+ 1316  cd ansible-demo-new/
+ 1317  mkdir 01-ansible
+ 1318  cd 01-ansible/
+ 1319  mkdir 01-inventory
+ 1320  cd 01-inventory/
+ 1321  vi inventory
+ 1322  ansible all -i inventory -m ping
+ 1323  git status
+ 1324  vi inventory 
+ 1325  cd ..
+ 1326  git staus
+ 1327  git status
+ 1328  git add .; git commit -m "ansible inventory for ssh connection";git push
+ 1329  history
+ 1330  history > histoy.txt
